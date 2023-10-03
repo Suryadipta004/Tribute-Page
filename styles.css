@@ -1,0 +1,361 @@
+/* Reset some default styles for better consistency */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    line-height: 1.6;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+header h1{
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: start;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: 0.3rem;
+    padding: 30px;
+}
+header h1 span{
+    float: right;
+    letter-spacing: 0.2em;
+    vertical-align: super;
+    padding-right: 50px;
+    font-size: 0.8rem;
+}
+header img{
+    width: 30rem;
+    height: 30rem;
+}
+header button{
+    background-color: black;
+    border-radius: 6px;
+    border: 2px solid white;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 0.7rem;
+    cursor: pointer;
+
+}
+header button:hover{
+    background-color: white;
+    color: #000000;
+    transition: ease 1s;
+    font-size: 1rem;
+}
+nav{
+    background-color: #000000;
+
+}
+nav ul {
+    list-style-type: none;
+    background-color: #000000;
+    text-align: end;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    margin: 20px auto;
+
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.event {
+    position: relative;
+   /* margin-bottom: 40px;*/
+   display: flex;
+   padding-bottom: 20px;
+   justify-content: space-between;
+}
+
+.timeline {
+    border-left: 0.2rem solid #000000;
+}
+.event::before{
+    content: '';
+    top: 0.8rem;
+    left: -0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    background-color: #000000;
+    border-radius: 20%;
+    z-index: 100;
+}
+
+.event-date {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+
+.event-description {
+    font-size: 16px;
+    margin-left: 20px;
+    padding-left: 50px;
+}
+.achievements{
+    background-color: #000000;
+    padding: 3.5rem;
+}
+.achievements .ach{
+    padding: 20px;
+}
+.achievements .ach-img{
+    display: flex;
+
+}
+.achievements .ach-img img{
+    height: 100%;
+    width: 100%;
+    border: 8px solid white;
+}
+.achievements .ach-subimg{
+    padding: 50px;
+    width: 100%;
+    
+}
+.achievements h2{
+    color: white;
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+.achievements p{
+    color: white;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+}
+.ach-text{
+    display: flex;
+    border: 2px solid white;
+    padding: 20px;
+}
+.ach-text h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.ach-text p{
+    text-align: end;
+    padding-left: 4rem;
+    
+}
+.legacy{
+    padding: 40px;
+}
+.legacy h2{
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif; 
+}
+.legacy-con{
+    display: flex;
+}
+.legacy-con img{
+    padding-right: 20px;
+}
+
+.see-more{
+    padding: 20px;
+    text-align: center;
+}
+.see-more a{
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+}
+.see-more a:hover{
+    font-weight: 600;
+    transition: ease 1s;
+}
+.quotes-section {
+    margin-top: 20px;
+    padding: 50px;
+}
+
+.quotes-section h2 {
+    font-size: 24px;
+    color: white;
+}
+.quotes-section h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+.quotes-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quotes-section li {
+    color: white;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    section {
+        margin-bottom: 0px;
+    }
+    nav ul li a {
+        font-size: 0.5rem;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+    header img {
+        display: none;
+    }
+    header{
+        background-image: url(F6xkZjPW4AA09rs.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    header h1 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-align: start;
+        /* font-size: 1.5rem; */
+        line-height: 1.2;
+        letter-spacing: 0.1rem;
+        padding: 30px;
+    }
+    header button {
+        padding: 0.3rem;
+    }
+    .event::before {
+        left: 1rem;
+    }
+    .event-description {
+        font-size: 10px;
+        margin-left: 0px;
+        padding-left: 20px;
+    }
+    .event-date {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-left: 50px;
+    }
+    .achievements {
+        padding: 0;
+    }
+    .ach-text h2 {
+        font-size: 0.6rem;
+        font-weight: 700;
+    }
+    .ach-text p {
+        padding-left: 0rem;
+        font-size: 0.35rem;
+    }
+    .ach-text {
+        padding: 10px;
+    }
+    .achievements .ach-subimg {
+        padding: 10px;
+        width: 100%;
+    }
+    .achievements .ach-img img {
+        height: 100%;
+        width: 85%;
+        border: 4px solid white;
+    }
+    .legacy-con img{
+    width: 100%;
+    height: 100%;
+    }
+    .legacy-con {
+        display: block;
+    }
+    .see-more {
+        padding: 0px;
+    }
+    .see-more a {
+        font-size: 0.5rem;
+    }
+    p {
+        font-size: 0.4rem;
+    }
+    .legacy h2 {
+        margin-bottom: 5px;
+        font-size: 1.3rem;
+    }
+    .quotes-section li {
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+        font-size: 0.5rem;
+    }
+    .quotes-section {
+        margin-top: 0px;
+        padding: 30px;
+    }
+    .quotes-section h2 {
+        font-size: 15px;
+    }
+    .quotes-section h3 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        font-size: 0.6rem;
+    }
+}
